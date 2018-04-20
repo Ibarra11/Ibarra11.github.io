@@ -1,0 +1,184 @@
+/* Extra Small Phones Retina */
+@media only screen and (min-width: 320px){
+
+    section{
+        padding: 20px 0;
+    }
+    h1{
+        font-size: 1.25rem;
+    }
+
+    h3{
+        font-size: 0.5rem;
+    }
+
+    .nav-img{
+        height: 20px;
+    }
+
+    h2{
+        font-size: 1.25rem;
+    }
+
+    nav li a:link, nav li a:visited{
+        font-size: 0.75rem;
+      }
+
+    #section-about p{
+        font-size: 0.9rem;
+        margin-top: 10px;
+        line-height: 125%;
+    }
+}
+
+
+/* Extra Small Devices Phones */
+@media only screen and (min-width: 480px){
+
+    /* Reusable Styles */
+    section{
+        padding: 40px 0;
+    }
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    h3{
+          font-size: 0.8rem;
+    }
+      /*navbar Styles  */
+    .nav-img{
+        height: 30px;
+    }
+
+    /* Contact-secton */
+    .contact-box{
+        justify-content: flex-start;
+    }
+
+    #section-about p{
+        margin-top: 20px;
+        font-size: 1.25rem;
+    }
+
+      
+}
+/* Small Devices/ Tablets */
+@media only screen and (min-width: 768px){
+    /* Reusable Styles */
+    h1{
+        font-size:  3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.25rem;
+    }
+
+    /* Nav Styles */
+    .nav-img{
+        height: 35px;
+    }
+
+    nav li a:link, nav li a:visited{
+        font-size: 0.8rem;
+    }
+
+    #section-about p{
+        margin-top: 0;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px){
+
+    /* Reusable Styles */
+    section{
+        padding: 60px 0;
+    }
+    h1{
+        font-size: 3.25rem;
+    }
+
+    /* Nav Styles */
+    .nav-img{
+        height: 40px;
+    }
+
+    nav li a:link, nav li a:visited{
+        font-size: 1rem;
+    }
+
+    /* Contact Styles  */
+    .contact-box{
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+
+    /* Card Styles */
+    h4{
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+      
+      
+    p.card-text{
+        font-size: 0.9rem;
+    }
+ 
+    .btn{
+        font-size: 0.8rem;
+    }
+
+    /* COlumn Styles */
+    .contact-row .col-lg-3{
+        padding-left: 15px;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 2.25rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+    /* Contact Styles */
+    .contact-box{
+        font-size: 1rem;
+    }
+    .icon-big{
+        font-size:  50px;
+    }
+
+    /* Card Overaly Text */
+    h4{
+        font-size: 1.75rem;
+    }
+
+    p.card-text{
+        font-size: 1rem;
+    }
+
+    #section-about p{
+        font-size: 1.375rem;
+        line-height: 125%;
+        word-spacing: 3px;
+        
+    }
+}

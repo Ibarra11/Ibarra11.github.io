@@ -1,0 +1,318 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,html{
+  font-size: 20px;
+  background-color: #fff;
+  font-weight: 300;
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/***********************************
+  Reusable Styles
+***********************************/
+
+section{
+  padding: 60px 0;
+}
+
+.btn{
+  font-size: 0.9rem;
+}
+
+.portfolio-box{
+  margin-bottom: 20px;
+}
+
+h1,h2,h3,h4{
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1{
+  letter-spacing: 5px;
+  word-spacing: 3px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+h2{
+  text-align: center;
+  word-spacing: 2px;
+  margin-bottom: 45px;
+}
+
+h2:after{
+  display: block;
+  height: 2px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #1abc9c;
+  content: " ";
+
+}
+
+h3{
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+/* Card Styles */
+
+.card{
+  height: 375px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h4{
+  margin-bottom: 15px;
+}
+
+
+p.card-text{
+  line-height: 125%;
+  word-spacing: 3px;
+}
+
+/***********************************
+  Header
+***********************************/
+header{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url("../images/main-header-min.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/main-header-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+/* Navigation Styles For Header */
+
+.navbar{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+nav li{
+  padding-left: 20px;
+  padding-top: 4px;
+}
+
+.navbar-brand{
+  padding: 0;
+}
+
+.navbar-nav{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-img{
+  height: 40px;
+  width: auto;
+}
+
+/* Transparent Navbar when the user scrolls past the header */
+.nav-transparent{
+  background-color: rgba(0,0,0,0.7);
+}
+
+
+nav li a:link, nav li a:visited{
+  text-decoration: none;
+  color: #F9FBFC;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+}
+
+nav li a:hover, nav li a:active{
+  border-bottom: 2px solid #1abc9c;
+}
+
+/* Mobile Nav Styles */
+.hamburger-icon{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.hero-text{
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%; 
+   -webkit-transform: translate(-50%, -50%); 
+           transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+/*************************************
+  About Section
+************************************/
+#section-about .row{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+
+
+#section-about img{
+  border-radius: 10px;;
+}
+
+/***********************************
+  Portfolio
+***********************************/
+#section-portfolio{
+  background-color: #F9F9F9;
+}
+
+/* The bottom of each row of porfolio cards */
+#section-portfolio .row{
+  margin-bottom: 20px;
+}
+
+.card-img-text{
+  text-align: center;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  -webkit-transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  background-color: #1abc9c ;
+  /* fallback for old browsers */
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+.card:hover .card-img-overlay {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/* Button Styles */
+.project-links{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.project-links a:first-child{
+  margin-right: 25px;
+}
+
+/* Background images for the cards */
+.img-colmar{
+  background-image: url('../images/colmar-snap.jpg');
+  background-size: cover;
+}
+ .img-restaurant {
+  background-image: url("../images/restaurantmanager.jpg");
+  background-size: cover;
+}
+ .img-trackster {
+  background-image: url("../images/Trackster.PNG");
+  background-size: cover;
+}
+ .img-optics {
+  background-image: url("../images/optics.jpg");
+  background-size: cover;
+}
+ .img-JumpStart {
+  background-image: url("../images/JumpStart.jpg");
+  background-size: cover;
+}
+
+.img-orderly{
+  background-image: url('../images/orderly.jpg');
+  background-size: cover;
+}
+
+
+
+/**************************
+  Contact Section
+***************************/
+
+.contact-row{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-box{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon-big{
+  margin-right: 20px;
+}
+
+
+/*****************************
+  Footer
+******************************/
+footer{
+  background-color: #efefef;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer p{
+  margin-bottom: 0;
+}
